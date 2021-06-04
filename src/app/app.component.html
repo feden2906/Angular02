@@ -1,7 +1,7 @@
 <h3> Виведення постів з JSON Placeholder. Під кожним постом коментарі </h3>
-<ul>
-  <li><a routerLink="home">home</a></li>
-  <li><a [routerLink]=["posts"]>post</a></li>
-  <li><a [routerLink]=["comments"]>comments</a></li>
-</ul>
+
+  <input type="button" [routerLink]="['home']" value="home">
+  <input type="button" [routerLink]="['posts']" value="posts">
+  <input type="button" [routerLink]="['comments']" value="comments">
+
 <router-outlet></router-outlet>

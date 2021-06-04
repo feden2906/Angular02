@@ -24,7 +24,7 @@ import { PostDetailsComponent } from './post-details/post-details.component';
     HttpClientModule,
     RouterModule.forRoot([
       {path: 'home', component:HomeComponent},
-      {path: 'posts', component:PostComponent, children: [
+      {path: 'posts', component:PostsComponent, children: [
           {path: ':id', component:PostDetailsComponent}
         ]},
       {path: 'comments', component:CommentsComponent}
